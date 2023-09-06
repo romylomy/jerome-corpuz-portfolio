@@ -4,19 +4,31 @@ import Lottie from'lottie-react';
 import SynergyAnimation from '@/public/SynergyAnimation.json';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithubAlt } from 'react-icons/fa';
+import { AiOutlineLinkedin } from 'react-icons/ai';
 
 
 export default function Intro() {
   return (
-    <section>
-       <motion.div
-             initial={{ opacity: 0, scale: 0 }}
-             animate={{ opacity: 1, scale: 1 }}
-             transition={{ delay: 0.6, duration: 0.5 }}
-            style={{ width: '100px', height: '100px' }} // Set appropriate dimensions
-        >
-            <Lottie animationData={SynergyAnimation} loop autoplay />
-        </motion.div>
+    <section className='pt-28'>
+            <div className='w-9/10'>
+               <div className='w-3/4 lg:flex items-center justify-center'>
+                  <div className='bg-blue-50 pl-2 pb-2 w-1/2'>
+                        <h1 className='text-custom'>Jerome Corpuz </h1>
+                        <h2>Software developer</h2>
+                        <p>
+                            Mediator for seamless Design-Dev synergy: bridging Creativy and code
+                        </p>
+                        <button>Collaborate</button>
+                        <div className='flex'>
+                            <AiOutlineLinkedin  />
+                            <FaGithubAlt  />
+                        </div>
+
+                  </div>
+        
+               </div>
+            </div>
 
     </section>
   )
