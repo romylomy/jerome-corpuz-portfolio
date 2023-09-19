@@ -15,7 +15,9 @@ module.exports = {
       fontSize: {
         'xs': '0.75rem',
         'sm': '0.875rem',
-        'custom': '2.25rem', // Define a custom font size
+        'name': '4.25rem',
+        'occupation': '2.25rem',
+        'slogan': '1.25rem', // Define a custom font size
       },
     },
   },
