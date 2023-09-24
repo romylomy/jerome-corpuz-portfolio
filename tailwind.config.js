@@ -6,7 +6,13 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+  
+    
     extend: {
+      colors:{
+        'body-green': '#74be7c',
+        'body-orange':'#ecd5ba',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -19,6 +25,7 @@ module.exports = {
         'occupation': '2.25rem',
         'slogan': '1.25rem', // Define a custom font size
       },
+      
     },
   },
   plugins: [],
