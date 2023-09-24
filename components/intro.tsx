@@ -11,77 +11,64 @@ import animationData from '@/app/animationData.json'
 
 export default function Intro() {
   return (
-    <section className='p-30 flex  align-center justify-center  ml-0 '>
-            <div className='pr-40 pl-20 pt-40 md:px-80 lg:px-70'>
-                
-                
-                <div className='relative'>
-                       <div>
-                          <div className='grid grid-col-1 lg:grid-cols-2'>
-                               
-                              
-                                <div className=''>
-                                  <motion.p
-                                    initial={{ opacity: 0}}
-                                    animate={{ opacity: 1}}
-                                    transition={{ duration: 0.5 }}
-                                    className=' text-name w-1/2 text-md text-gray-600 font-light md:text-md'>Jerome Corpuz
-                                  </motion.p>
+    <motion.section
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    transition={{ duration: 1.0 }}
+      className=' py-40 md:py-20 lg:py-40 xl:py-40 flex align-center  shadow-none md:shadow-xl lg:shadow-xl md:px-40 lg:px-40  md:rounded-full lg:rounded-full xl:lg:rounded-full'>
+      
+      <motion.div
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1.0 }}
+          className='grid place-items grid-cols-2 rounded-full  md:grid-cols-2 lg:grid-cols-2  p-5 lg:p-12 xl:p-12 shadow-xl  '>
 
-            
-                                  
-                                  <motion.div
-                                    initial={{ opacity: 0}}
-                                    animate={{ opacity: 1}}
-                                    transition={{ duration: 1.5 }}
-                                    className='pt-5'>
+           <motion.div
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1}}
+              transition={{ duration: 1.5 }}
+              className='drop-shadow-lg'>
+                <div className='py-2 grid grid-cols-1 gap-1' >
+                  <p className='text-4xl font-bold text-gray-500  '>Jerome Corpuz 
+                  </p>
 
-                                        <p className='text-lg text-gray-600'>Software developer</p>
+                  <p className='lg:text-xl  font-light text-gray-600'> Software developer</p>
 
-                                        <p className=' w-3/4 text-small  text-green-700  '>
-                                            Mediator for seamless Design-Dev synergy: bridging Creativy and code
-                                        </p>
-                                                                              
-                                
-                                      <button className='mt-5 mb-5 pl-5 pr-5 pt-2 pb-2 border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:bg-yellow-400'>Collaborate</button>
-
-                                      <div className='flex items-center '>
-                                          <AiOutlineLinkedin  />
-                                          <FaGithubAlt/>
-                                      </div>
-
-
-                                   </motion.div>
-                          
-
-                          
-                                </div >
-                                <div className=' shadow-md rounded-full lg:pl-30'>
-                                  <div className=' absolute bg-slate-100 bg-opacity-30 top-1/2 left-3/4 top rotate-90 shadow-md rounded-full w-full md:w-full lg:static lg:w-full'>
-                                      <Lottie animationData={animationData}/>
-                                  </div>
-
-                                </div>
-                               
-                               
-
-                          </div>
-
-                          
-                        
-                          
-                        </div>
-          
                 </div>
-            </div>
 
-           
+                <div className='lg:pt-3'>
+
+                    <p className='text-xs  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
+                        Mediator for seamless Design-Dev synergy: bridging Creativy and code
+                    </p>
+
+                    <button className='drop-shadow-lg my-2 px-5 py-2 lg:px-9 lg:py-3 lg:text-lg font-light border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:bg-green-800'>Collaborate</button>
+                    
+                    <div className='drop-shadow-lg flex'> 
+                      <a href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={50}/></a>
+                      <a href='https://www.linkedin.com/in/jeromecorpuz/'><FaGithubAlt size={50}/></a>
+                      <div></div>
+                    </div>
+
+                </div>                                  
+               
 
 
-                
-            
-           
+          </motion.div>              
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: .5 }}
+            className=' '>
+                <div className='rotate-90 shadow-lg rounded-full w-full '>
+                    <Lottie animationData={animationData}/>
+                </div>
 
-    </section>
+          </motion.div>
+                               
+
+      </motion.div>
+              
+    </motion.section>
   )
 }
