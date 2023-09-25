@@ -42,7 +42,7 @@ export default function Intro() {
                         Mediator for seamless Design-Dev synergy: bridging Creativy and code
                     </p>
 
-                    <button className='drop-shadow-lg my-2 px-5 py-2 lg:px-9 lg:py-3 lg:text-lg font-light border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hover:bg-green-800'>Collaborate</button>
+                    <button className='drop-shadow-lg my-2 px-5 py-2 lg:px-9 lg:py-3 lg:text-lg font-light border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full hover:bg-green-800'>Collaborate</button>
                     
                     <div className='drop-shadow-lg flex'> 
                       <a href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={50}/></a>
