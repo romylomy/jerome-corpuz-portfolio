@@ -60,7 +60,7 @@ export default function Intro() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: .5 }}
             className=' '>
-                <div className='rotate-90 shadow-lg rounded-full w-full '>
+                <div className='rotate-90 bg-slate-50 bg-opacity-30 shadow-lg rounded-full w-full '>
                     <Lottie animationData={animationData}/>
                 </div>
 
