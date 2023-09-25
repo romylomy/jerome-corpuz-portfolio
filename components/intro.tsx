@@ -21,7 +21,7 @@ export default function Intro() {
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           transition={{ duration: 1.0 }}
-          className='grid place-items grid-cols-2 rounded-full  md:grid-cols-2 lg:grid-cols-2  p-5 lg:p-12 xl:p-12 shadow-xl  '>
+          className='grid place-items grid-cols-2 rounded-full  md:grid-cols-2 lg:grid-cols-2  p-5 lg:p-12 xl:p-12 md:shadow-xl lg:shadow-xl xl:shadow-xl  '>
 
            <motion.div
               initial={{ opacity: 0}}
@@ -38,7 +38,7 @@ export default function Intro() {
 
                 <div className='lg:pt-3'>
 
-                    <p className='text-xs  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
+                    <p className='text-2xl  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
                         Mediator for seamless Design-Dev synergy: bridging Creativy and code
                     </p>
 
