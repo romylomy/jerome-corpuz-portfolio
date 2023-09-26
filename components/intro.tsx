@@ -38,8 +38,8 @@ export default function Intro() {
 
                 <div className='lg:pt-3'>
 
-                    <p className='text-2xl  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
-                        Mediator for seamless Design-Dev synergy: bridging Creativy and code
+                    <p className='text-md  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
+                        Mediator for cohesive Design-Dev synergy: bridging Creativy and code
                     </p>
 
                     <button className='drop-shadow-lg my-2 px-5 py-2 lg:px-9 lg:py-3 lg:text-lg font-light border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full hover:bg-green-800'>Collaborate</button>
