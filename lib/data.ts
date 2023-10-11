@@ -62,6 +62,28 @@ export const experiencesData = [
   },
 ] as const;
 
+export const dataSkills = {
+  Language: [
+    { name: "CSS" },
+    { name: "HTML" },
+    { name: "Javascript" },
+    { name: "TypeScript" },
+  ],
+  Framework: [
+    { name: "Framer Motion" },
+    { name: "Next.js" },
+    { name: "React" },
+    { name: "Tailwind" },
+    { name: "Zustand" },
+  ],
+  Design: [
+    { name: "UML" },
+    { name: "ERD" },
+    { name: "Figma" },
+  ],
+};
+
+
 export const skillsData = [
   "HTML",
   "CSS",
@@ -73,9 +95,7 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Prisma",
-  "MongoDB",
   "Zustand",
-  "GraphQL",
   "Express",
   "PostgreSQL",
   "Python",

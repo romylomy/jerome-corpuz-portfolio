@@ -7,6 +7,9 @@ import { motion } from 'framer-motion';
 import { FaGithubAlt } from 'react-icons/fa';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import animationData from '@/app/animationData.json' 
+import animation from '@/app/animation.json' 
+
+
 
 
 export default function Intro() {
@@ -15,59 +18,74 @@ export default function Intro() {
     initial={{ opacity: 0}}
     animate={{ opacity: 1}}
     transition={{ duration: 1.0 }}
-      className=' py-40 md:py-20 lg:py-40 xl:py-40 flex align-center  shadow-none md:shadow-xl lg:shadow-xl md:px-40 lg:px-40  md:rounded-full lg:rounded-full xl:lg:rounded-full'>
+      className=' grid grid-cols-1 bg-opacity-30 pt-40  rounded-lg  font-gothic   '>
       
+      <div className='text-center rounded-lg  '>
+        <h1 className=' text-5xl   font-semibold  text-slate-700  text-opacity-80 md:text-5xl lg:text-7xl lg:w-full '>
+          Software developer <br/> for cohesive <br/> Design  Dev <br/> synergy
+        </h1>
+        
+        
+                 
+      </div>
+      <div className='py-2 border-b-2 border-slate-700 sm:hidden '></div>
+
+     
       <motion.div
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           transition={{ duration: 1.0 }}
-          className='grid place-items grid-cols-2 rounded-full  md:grid-cols-2 lg:grid-cols-2  p-5 lg:p-12 xl:p-12 md:shadow-xl lg:shadow-xl xl:shadow-xl  '>
+          className='  text-center'>
 
            <motion.div
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}
-              transition={{ duration: 1.5 }}
-              className='drop-shadow-lg'>
-                <div className='py-2 grid grid-cols-1 gap-1' >
-                  <p className='text-4xl font-bold text-gray-500  '>Jerome Corpuz 
-                  </p>
+              transition={{ duration: 7.5 }}
+              className='pt-2 grid grids-cols-2 justify-center align-center px-10 md:justify-center gap-4 '>
+                
+                <button className='py-3 px-5 shadow-lg bg-green-600 backdrop-blur-md bg-opacity-50 font-light text-slate-100 text-xl rounded-full '>
+                  Collaborate
+                  </button>
 
-                  <p className='lg:text-xl  font-light text-gray-600'> Software developer</p>
-
-                </div>
-
-                <div className='lg:pt-3'>
-
-                    <p className='text-md  text-green-700  md:text-xl lg:text-3xl xl:text-5xl '>
-                        Mediator for cohesive Design-Dev synergy: bridging Creativy and code
-                    </p>
-
-                    <button className='drop-shadow-lg my-2 px-5 py-2 lg:px-9 lg:py-3 lg:text-lg font-light border-white border-opacity-40 bg-green-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full hover:bg-green-800'>Collaborate</button>
-                    
-                    <div className='drop-shadow-lg flex'> 
-                      <a href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={50}/></a>
-                      <a href='https://www.linkedin.com/in/jeromecorpuz/'><FaGithubAlt size={50}/></a>
-                      <div></div>
-                    </div>
-
-                </div>                                  
+                <button className='py-3 px-5 shadow-lg bg-slate-50 backdrop-blur-md bg-opacity-30 font-light text-slate-700 text-xl rounded-full '>
+                  Download CV 
+                  </button> 
+ 
                
-
-
-          </motion.div>              
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: .5 }}
-            className=' '>
-                <div className='rotate-90 bg-slate-50 bg-opacity-30 shadow-lg rounded-full w-full '>
-                    <Lottie animationData={animationData}/>
+               
+                <div className='drop-shadow-lg grid grid-cols-2  '> 
+                            <a href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={50}/></a>
+                            <a href='https://www.linkedin.com/in/jeromecorpuz/'><FaGithubAlt size={50}/></a>
+                            
+                        
                 </div>
-
-          </motion.div>
-                               
+               
+                   
+                   
+                   
+                                        
+               
+          </motion.div>                  
 
       </motion.div>
+     
+      <motion.div
+            initial={{ y: -400, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: .5 }}
+            className=' py-0 align-center sm:px-40 md:px-50 lg:px-80 xl:px-100'>
+           
+              <Lottie className="opacity-70  " animationData={animationData}/>
+          
+                
+
+      </motion.div>
+      
+      
+               
+      
+    
+
               
     </motion.section>
   )

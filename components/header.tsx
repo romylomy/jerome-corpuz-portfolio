@@ -4,8 +4,18 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { links } from "@/lib/data";
 import Navigation from './navigation';
+import { useState } from 'react';
+import{ Bars3Icon} from "@heroicons/react/24/solid"
+import MenuOverlay from './MenuOverlay';
 
 export default function header() {
+    const [navbarOpen, setnavbarOpen ] = useState(false)
+
+    function toggleOff(){
+      setnavbarOpen(false)
+    }
+    
+
     
   return (
     <header className='z-[999] relative'>
@@ -14,9 +24,22 @@ export default function header() {
             initial={{ y: -100, x: "-50%", opacity: 0 }}
             animate={{ y: 0, x: "-50%", opacity: 1 }}
           ></motion.div>
-        
-        <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-            <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          <div className='mobile-menu block fixed right-[2rem]  top-[1.7rem] py-0 md:hidden '>
+            {
+              !navbarOpen ? (
+                <button onClick={()=> setnavbarOpen(true)} className=' z-[999] flex items-center px-3 order rounded border-slate-700 text-slate-100  bg-slate-700 hover:text-white hover:border-white '>
+                  <Bars3Icon className='h-6 w-6'/>
+                </button>
+              ) : (
+                <MenuOverlay toggleOff={toggleOff}/> 
+              )
+            }
+
+          </div>
+         
+        <nav className=" flex fixed  left-1/2 -translate-x-1/2  top-[1.7rem] h-[initial] py-0">
+              
+            <ul className=" menu hidden md:flex md:w-[22rem] md:items-center md:justify-center md:gap-y-1 md:text-[0.9rem] md:font-medium md:text-gray-500 sm:w-[initial]  md::gap-5">
               {
                 links.map((link)=>(
                    <Navigation {...link} key={link.hash} />

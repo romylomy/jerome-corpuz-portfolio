@@ -3,9 +3,11 @@
 import React from 'react'
 import { LinkType } from '@/lib/data';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import Link from 'next/link'
+
 
 export default function Navigation({name, hash}:LinkType) {
+
 
 
   return (
