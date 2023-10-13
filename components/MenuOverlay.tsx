@@ -29,7 +29,7 @@ export default function MenuOverlay({toggleOff}:MenuOverlayProps) {
             <div className='pt-10 grid grid-cols-1 gap-2 text-xl '>
                     {
                         links.map((link, index) =>(
-                            <Link onClick={toggleOff} href={link.hash}> {link.name} </Link>   
+                            <Link key={index} onClick={toggleOff} href={link.hash}> {link.name} </Link>   
                         ))
                     }
 
