@@ -21,7 +21,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="pb-40 p-5 lg:px-50 ">
-      <h1 className="text-center text-4xl font-semibold text-slate-600 text-opacity-70 md:text-5xl xl:text-7xl">Skill Set</h1>
+      <h1 className="text-center text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-700 md:text-5xl xl:text-7xl">Skill Set</h1>
       <div className="py-3 px-2 lg:p-10">
         <div className='grid grid-cols-1'>
           {Object.keys(dataSkills).map((category) => (
