@@ -8,7 +8,7 @@ import { useState } from 'react';
 import{ Bars3Icon} from "@heroicons/react/24/solid"
 import MenuOverlay from './MenuOverlay';
 
-export default function header() {
+export default function Header() {
     const [navbarOpen, setnavbarOpen ] = useState(false)
 
     function toggleOff(){
