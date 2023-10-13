@@ -1,11 +1,21 @@
+"use client"
 import React from 'react'
+import { motion } from 'framer-motion'
+import animationData from '@/app/animationData.json' 
+import Lottie from "lottie-react"
 
 export default function SectionDivider() {
   return (
-    <div className='md:w-full  md:flex md:justify-center md:py-40 hidden'> 
-        <div className="bg-gray-200 my-24  h-17 w-1 rounded-full"></div>
+    <motion.div
+    initial={{ y: -400, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: .5 }}
+    className='  py-0 align-center sm:px-40 md:px-50 lg:px-80 xl:px-100'>
+   
+      <Lottie className="opacity-70  " animationData={animationData}/>
+  
+        
 
-
-    </div>
+  </motion.div> 
   )
 }
