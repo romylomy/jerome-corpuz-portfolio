@@ -17,8 +17,8 @@ export default function ItemSkill({name, index}) {
   }
   return (
     <motion.div
-      className="shadow-lg rounded-lg text-slate-700 bg-emerald-600  bg-opacity-70"
-      key={index} // Assign a unique key to the motion element
+      className="shadow-lg rounded-lg border-2 border-slate-700 text-slate-700 bg-slate-500 bg-opacity-70"
+      key={index}
       variants={FadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
@@ -27,8 +27,8 @@ export default function ItemSkill({name, index}) {
     }}
       >
       
-        <div className="py-1 p-4">
-            <h2 className=" text-sm lg:text-2xl">{name}</h2>
+        <div className="py-1 px-5">
+            <p className="text-xl lg:text-2xl">{name}</p>
         </div>
      
     </motion.div>

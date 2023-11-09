@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import corpcommentImg from "@/public/corpcommentImg.png";
+
 
 export type LinkType ={
   name: string
@@ -25,10 +27,7 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
+ 
   {
     name: "Contact",
     hash: "#contact",
@@ -68,13 +67,16 @@ export const dataSkills = {
     { name: "HTML" },
     { name: "Javascript" },
     { name: "TypeScript" },
+    { name: "C#" },
+    { name: "java" },
+    { name: "PL/SQL" },
   ],
   Framework: [
     { name: "Framer Motion" },
-    { name: "Next.js" },
-    { name: "React" },
+    { name: "React/Next.js" },
     { name: "Tailwind" },
-    { name: "Zustand" },
+    { name: "Prisma" },
+
   ],
   Design: [
     { name: "UML" },
@@ -82,6 +84,17 @@ export const dataSkills = {
     { name: "Figma" },
   ],
 };
+
+export const projectsData = [
+  {
+    title: "MealMingle",
+    description:
+      "Your MealMate is a user-friendly web application that simplifies meal planning and grocery shopping. It empowers users to create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
+    tags: ["React", "Next.js", "Firebase", "Tailwind"],
+    imageUrl: corpcommentImg,
+  },
+  
+] as const;
 
 
 export const skillsData = [

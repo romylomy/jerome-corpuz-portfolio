@@ -20,7 +20,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="pb-40 p-5 lg:px-50 ">
+    <section id="skills" className="pb-40 p-5 lg:px-50 scroll-mt-20 ">
       <h1 className="text-center text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-700 md:text-5xl xl:text-7xl">Skill Set</h1>
       <div className="py-3 px-2 lg:p-10">
         <div className='grid grid-cols-1'>
@@ -29,7 +29,7 @@ export default function Skills() {
               <div className='mb-5  rounded-lg bg-opacity-50'>
                 <h2 className='font-lora  text-slate-700 font-ubuntu font-semibold text-2xl lg:text-5xl '>{category}</h2>
               </div>
-              <ul className='pl-4 flex flex-wrap  gap-1'>
+              <ul className='pl-4 flex flex-wrap  gap-1 xl:gap-3 '>
                 {dataSkills[category as keyof typeof dataSkills].map((skill, index) => {
                   console.log(index); // Log the index after each iteration
                   return (
