@@ -10,7 +10,9 @@ import animationData from '@/app/animationData.json'
 import animation from '@/app/animation.json' 
 import { TypeAnimation } from 'react-type-animation';
 import SectionDivider from "@/components/sectionDivider";
-
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
 
 
 
@@ -47,7 +49,7 @@ export default function Intro() {
                   wrapper="span"
                   speed={50}
                   style={{ fontSize: '1em', display: 'inline-block' }}
-                  className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-700'
+                  className='bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-green-700'
                   repeat={Infinity}
                   />
 
@@ -68,27 +70,39 @@ export default function Intro() {
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}
               transition={{ duration: 7.5 }}
-              className='pt-2 flex  justify-center md:justify-start gap-4 '>
+              className='pt-2 flex  sm:justify-center md:justify-start gap-4 '>
                 
-               <div className="grid grid-cols-2">
                
 
-                    <button className='px-2 border-2 border-green-700 shadow-lg bg-slate-50 bg-opacity-40 backdrop-blur-md font-light text-slate-700 text-sm md:text-xl rounded-full'>
-                      Resume
-                      </button>
-                      <button className='ml-2  px-2 shadow-lg bg-gradient-to-b from-cyan-500 to-green-700  backdrop-blur-md font-light text-slate-100 text-md md:text-xl rounded-full '>
-                      Contact 
-                      </button>
+              
 
-               </div>
+                <Link
+                  href="#contact"
+                  className="group  bg-slate-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                  >
+                  Contact{" "}
+                  <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+                </Link>
+                <a
+                  className="group opacity-70 bg-slate-50 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+                  href="/JeromeCorpuzResume.pdf"
+                  download
+                  >
+                  Resume
+                  <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                </a>
+
                  
 
-                    <div className=' order-first drop-shadow-lg flex justify-center p-5  '> 
-                            <a href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={30}/></a>
-                            <a href='https://github.com/romylomy'><FaGithubAlt size={30}/></a>
+              
+                            
+                            <a  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                                href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={30}/></a>
+                            
+                            <a className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                               href='https://github.com/romylomy'><FaGithubAlt size={30}/></a>
                             
                         
-                </div>
                   
         
           </motion.div>                  
