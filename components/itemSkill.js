@@ -17,7 +17,7 @@ export default function ItemSkill({name, index}) {
   }
   return (
     <motion.div
-      className="shadow-lg rounded-lg border-2 border-slate-700 text-slate-700 bg-slate-500 bg-opacity-70"
+      className="shadow-lg rounded-lg border-2 border-slate-700 text-slate-700 bg-slate-200 bg-opacity-70"
       key={index}
       variants={FadeInAnimationVariants}
       initial="initial"

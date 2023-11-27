@@ -49,7 +49,7 @@ export default function Intro() {
                   wrapper="span"
                   speed={50}
                   style={{ fontSize: '1em', display: 'inline-block' }}
-                  className='bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-green-700'
+                  className=' bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500'
                   repeat={Infinity}
                   />
 
@@ -70,37 +70,32 @@ export default function Intro() {
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}
               transition={{ duration: 7.5 }}
-              className='pt-2 flex  sm:justify-center md:justify-start gap-4 '>
-                
-               
-
-              
-
+              className='pt-2 text-sm flex  sm:justify-center md:justify-start gap-2 sm:gap-4 '>
+            
                 <Link
                   href="#contact"
-                  className="group  bg-slate-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                  className="group  bg-slate-700 text-white py-[5px] px-[10px] sm:px-7 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                   >
                   Contact{" "}
                   <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
                 <a
-                  className="group opacity-70 bg-slate-50 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+                  className="group opacity-70 border-2 border-slate-700 bg-slate-50 py-[2px] px-[10px] sm:px-7 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
                   href="/JeromeCorpuzResume.pdf"
                   download
                   >
                   Resume
                   <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
-
-                 
-
-              
+                <a className="shadow-lg bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                    href='https://www.linkedin.com/in/jeromecorpuz/'>
+                    <AiOutlineLinkedin size={30}/>
+                </a>
                             
-                            <a  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                                href='https://www.linkedin.com/in/jeromecorpuz/'><AiOutlineLinkedin size={30}/></a>
-                            
-                            <a className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                               href='https://github.com/romylomy'><FaGithubAlt size={30}/></a>
+                <a className="shadow-lg bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                  href='https://github.com/romylomy'>
+                    <FaGithubAlt size={30}/>
+                </a>
                             
                         
                   
