@@ -36,6 +36,8 @@ export default function Intro() {
               <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
+                    'Jerome Corpuz,',
+                    2000,
                     'Software',
                     1000,
                     'Web',

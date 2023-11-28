@@ -103,7 +103,7 @@ export const aboutMeData = [
   {
     title: "Present",
     description:
-      "I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.My favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am also familiar with PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and MongoDB. I am currently looking for a co-op position in IT roles",
+      "I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.My favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am experience in PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and MongoDB. I am currently looking for a co-op position in IT roles",
     imageUrl: Present,
   },
   {

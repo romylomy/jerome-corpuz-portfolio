@@ -3,6 +3,8 @@ import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/sectionDivider";
+import Contact from "@/components/contact";
+
 import LogoSmall from "@/components/logoSmall";
 import { useState, createContext, useContext } from "react";
 
@@ -23,6 +25,7 @@ export default function Home() {
         <Projects/>
         <SectionDivider/>
         <Skills />
+        <Contact/>
     
     </main>
   )
