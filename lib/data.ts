@@ -36,32 +36,6 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
 
 export const dataSkills = {
   Language: [
@@ -103,13 +77,13 @@ export const aboutMeData = [
   {
     title: "Present",
     description:
-      "I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.My favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am experience in PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and MongoDB. I am currently looking for a co-op position in IT roles",
+      "I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.My favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am experience in PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and MongoDB. ",
     imageUrl: Present,
   },
   {
     title: "Future",
     description:
-      "I aspire to carve a career path in full-stack web development, blending my analytical skills from Health Science background with creativity and problem-solving abilities that programming offers. ",
+      "I aspire to carve a career path in full-stack web development, blending my analytical skills from Health Science background with creativity and problem-solving abilities that programming offers. I am currently looking for a co-op position in IT roles ",
     imageUrl: Future,
   },
   {
