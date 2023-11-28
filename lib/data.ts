@@ -99,12 +99,7 @@ export const projectsData = [
 ] as const;
 
 export const aboutMeData = [
-  {
-    title: "Past",
-    description:
-      "After my study in, Health Science, I decided to pursue my curiosity to learn object oriented programming.I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.",
-    imageUrl: Past,
-  },
+  
   {
     title: "Present",
     description:
@@ -116,6 +111,12 @@ export const aboutMeData = [
     description:
       "I aspire to carve a career path in full-stack web development, blending my analytical skills from Health Science background with creativity and problem-solving abilities that programming offers. ",
     imageUrl: Future,
+  },
+  {
+    title: "Past",
+    description:
+      "After my study in, Health Science, I decided to pursue my curiosity to learn object oriented programming.",
+    imageUrl: Past,
   },
   
 ] as const;

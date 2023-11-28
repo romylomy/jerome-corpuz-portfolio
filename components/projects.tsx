@@ -8,10 +8,10 @@ export default function Projects() {
   
 
   return (
-    <section id="projects" className="scroll-mt-28 mb-28">
+    <section id="projects" className="sm:flex sm:justify-center scroll-mt-28 mb-28">
       <h1 className=" mb-8 font-semibold text-center text-5xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-700 md:text-5xl xl:text-7xl">
-        My projects</h1>
-      <div>
+        Projects</h1>
+      <div className="font-[10px] px-8">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
