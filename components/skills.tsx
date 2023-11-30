@@ -20,7 +20,19 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="pb-40 p-5 lg:px-50 scroll-mt-20 ">
+    <motion.section id="skills" className="relative pb-40 p-5 lg:px-50 scroll-mt-20 "
+      initial={{
+        opacity:0,
+      }}
+        whileInView={{
+          opacity:1,
+      }}
+        transition={{
+          duration:1
+      }}
+    >
+        <div className="bg-blue-700 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
+        <div className="bg-slate-300 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
       <h1 className="text-center text-5xl font-semibold bg-clip-text text-slate-700 md:text-5xl xl:text-7xl">Skill Set</h1>
       <div className="py-3 px-2 lg:p-10">
         <div className='grid grid-cols-1'>
@@ -52,6 +64,6 @@ export default function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

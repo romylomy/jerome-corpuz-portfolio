@@ -2,7 +2,15 @@ import { AnyARecord } from "dns";
 import { validateHeaderValue } from "http";
 import {Resend} from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY); 
+const apiKey = process.env.RESEND_API_KEY;
+
+if (!apiKey) {
+  console.error("ERROR: Missing RESEND_API_KEY. Please provide the API key.");
+} else {
+  console.log("API Key:", apiKey);
+  const resend = new Resend(apiKey);
+ 
+}
 const validatString = ((stringData: unknown, maxLength:number) => {
      if(!stringData|| typeof stringData !== "string" || stringData.length > maxLength){
         return false

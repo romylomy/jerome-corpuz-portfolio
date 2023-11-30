@@ -37,7 +37,7 @@ export default function Header() {
 
           </div>
          
-        <nav className=" flex fixed  left-1/2 -translate-x-1/2  top-[1.5rem] h-[initial] py-0">
+        <nav className=" flex fixed  left-1/2 -translate-x-1/2 top-[1.5rem] h-[initial] py-0">
               
             <ul className=" menu hidden sm:flex w-full sm:items-center sm:justify-center sm:gap-y-1 sm:text-[0.9rem] sm:font-medium sm:text-gray-500 sm:w-[initial]  sm::gap-5">
               {
