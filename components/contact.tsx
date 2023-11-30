@@ -2,8 +2,12 @@
 import React from 'react'
 import { FaPaperPlane } from 'react-icons/fa'
 import {motion} from "framer-motion"
+import {sendEmail} from "@/lib/actions/sendEmail"
 
 export default function Contact() {
+
+  
+    
   return (
     <motion.section 
         id="contact" 
@@ -28,18 +32,20 @@ export default function Contact() {
         <form 
             className='mt-10 flex flex-col'
             action={ async (formData) =>{
-                
+                await sendEmail(formData);                
             }}>
             <input 
                 type="email" 
                 className='h-14 px-4 rounded-lg border-2 border-black'
                 placeholder="Your email"
+                name="senderEmail"
                 required
                 maxLength={500} />
 
             <textarea 
                 className='h-52 p-4 my-3 rounded-lg border-2 border-black '
                 placeholder="Your message"
+                name="message"
                 required
                 maxLength={500}/>
 
@@ -52,6 +58,7 @@ export default function Contact() {
                 group-hover:translate-x-1
                 '/>
             </button>
+     
 
 
         </form>
