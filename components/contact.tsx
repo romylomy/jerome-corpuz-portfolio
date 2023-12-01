@@ -2,7 +2,7 @@
 import React from 'react'
 import { FaPaperPlane } from 'react-icons/fa'
 import {motion} from "framer-motion"
-import {sendEmail} from "@/lib/actions/sendEmail"
+
 
 export default function Contact() {
 
@@ -32,9 +32,7 @@ export default function Contact() {
 
             <form 
                 className='mt-10 flex flex-col'
-                action={ async (formData) =>{
-                    await sendEmail(formData);                
-                }}>
+               >
                 <input 
                     type="email" 
                     className='h-14 px-4 rounded-lg border-2 border-black'

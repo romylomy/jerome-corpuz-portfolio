@@ -51,10 +51,12 @@ export const dataSkills = {
     { name: "PL/SQL" },
   ],
   Framework: [
-    { name: "Framer Motion" },
+    
     { name: "React/Next.js" },
     { name: "Tailwind" },
+    { name: "Zod" },
     { name: "Prisma" },
+    { name: "Framer Motion" },
 
   ],
   Design: [
