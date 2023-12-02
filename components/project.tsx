@@ -23,7 +23,7 @@ export default function Project({
 
 
   const handleButtonClick = () => {
-        window.open('https://cprg306-assignments-iota.vercel.app/week7', '_blank');
+        window.open('https://cprg306-assignments-vy9h.vercel.app/week10', '_blank');
    };
    
 
