@@ -31,7 +31,7 @@ export default function AboutCard({
       }}
       className="group mx-auto mb-3 sm:mb-8 last:mb-0"
     >
-      <section className=" relative bg-gray-50 bg-opacity-20 max-w-[42rem]  border-black rounded-lg overflow-hidden sm:pr-8  sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className=" relative bg-slate-50 sm:bg-none max-w-[42rem]  border-black rounded-lg overflow-hidden sm:pr-8  sm:h-[20rem] transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="bg-blue-700 bg-opacity-40 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
         <div className="bg-slate-300 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         <div className="p-4 sm:pl-10  sm:pt-10 sm:max-w-[80%] flex flex-col h-full sm:group-even:ml-[10rem]">

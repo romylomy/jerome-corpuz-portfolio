@@ -70,7 +70,7 @@ export const projectsData = [
   {
     title: "MealMingle",
     description:
-      "Empowers users to create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
+      "Users can create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
     tags: ["React", "Next.js", "Firebase", "Tailwind"],
     imageUrl: corpcommentImg,
   },
@@ -82,7 +82,7 @@ export const aboutMeData = [
   {
     title: "Present",
     description:
-      "I am a second year student enrolled in Software development at Southern Alberta Institute of Technology.My favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am experience in PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and MongoDB. ",
+      "As a software student my favorite part of programming is the problem-solving aspect, entrepreneurial ventures one can partake, and the communal discourse within the tech community. My core framework is React, Next.js. I am experience in PL/SQL, C#, TypeScript and Prisma while currently learning Java, Node.js, and Firebase. ",
     imageUrl: Present,
     mobileUrl: MobilePresent
   },
@@ -96,7 +96,7 @@ export const aboutMeData = [
   {
     title: "Past",
     description:
-      "After my study in, Health Science, I decided to pursue my curiosity to learn object oriented programming.",
+      "I have studied health science for two years. I find interest in using my knowledge in statics, experimental research, and design principles for extrapolating data using programming",
     imageUrl: Past,
     mobileUrl:MobilePast
   },

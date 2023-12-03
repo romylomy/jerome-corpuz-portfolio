@@ -36,8 +36,6 @@ export default function Intro() {
               <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    'Jerome Corpuz,',
-                    2000,
                     'Software',
                     1000,
                     'Web',
@@ -60,7 +58,7 @@ export default function Intro() {
 
             </h1> 
             
-            <p className="  py-10 lg:text-lg lg:w-1/2 ">I am a second year Software Development Student at Sait. I enjoy building websites. My focus is the MERN stack.     </p>
+            <p className="  py-10 lg:text-lg lg:w-1/2 ">I am Jerome Corpuz a second year software development student at Sait. I enjoy building websites. My focus is the MERN stack.    </p>
 
       <motion.div
           initial={{ opacity: 0}}
@@ -71,7 +69,7 @@ export default function Intro() {
            <motion.div
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}
-              transition={{ duration: 7.5 }}
+              transition={{ duration: 1 }}
               className='pt-2 text-sm flex  sm:justify-center md:justify-start gap-2 sm:gap-4 '>
             
                 <Link
