@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -23,7 +24,7 @@ export default function Project({
 
 
   const handleButtonClick = () => {
-        window.open('https://cprg306-assignments-vy9h.vercel.app/week10', '_blank');
+        window.open(link, '_blank');
    };
    
 

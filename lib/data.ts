@@ -3,6 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcommentImg.png";
+import Evergrowth from "@/public/Evergrowth.png";
+
 import Future from "@/public/Future.png";
 import Past from "@/public/Past.png";
 import Present from "@/public/Present.png";
@@ -72,8 +74,18 @@ export const projectsData = [
     description:
       "Users can create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
     tags: ["React", "Next.js", "Firebase", "Tailwind"],
-    imageUrl: corpcommentImg,
+    imageUrl:corpcommentImg,
+    link:'https://cprg306-assignments-vy9h.vercel.app/week10'
   },
+  {
+    title: "Evergrowth Consulting Website Redesign",
+    description:
+      "An on going personal project to redesign old business website",
+    tags: ["Figma", "Next.js", "Shadcn"],
+    imageUrl:Evergrowth ,
+    link:'https://www.figma.com/file/VGtTsri1bUpa3AIYkSN7lK/Evergrowth-Consulting?type=design&node-id=0%3A1&mode=design&t=c9B9J8sPf0xY0aAS-1'
+  },
+  
   
 ] as const;
 
