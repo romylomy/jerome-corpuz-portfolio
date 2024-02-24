@@ -11,6 +11,7 @@ import Present from "@/public/Present.png";
 import MobileFuture from "@/public/MobileFuture.svg";
 import MobilePast from "@/public/MobilePast.svg";
 import MobilePresent from "@/public/MobilePresent.svg";
+import magazineHeader from "@/public/magazineHeader.png"
 
 export type LinkType ={
   name: string
@@ -20,24 +21,24 @@ export type LinkType ={
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "/#home",
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "/#about",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "/#projects",
   },
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "/#skills",
   },
  
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "/#contact",
   },
 ] as const;
 
@@ -85,6 +86,15 @@ export const projectsData = [
     imageUrl:Evergrowth ,
     link:'https://www.figma.com/file/VGtTsri1bUpa3AIYkSN7lK/Evergrowth-Consulting?type=design&node-id=0%3A1&mode=design&t=c9B9J8sPf0xY0aAS-1'
   },
+  {
+    title: "Ocean Acidification Magazine",
+    description:
+      "Dive into my graphic portfolio, 'Goal 14: Life Below Water', where I explore the profound impact of ocean acidification on marine ecosystems and global livelihoods",
+    tags: ["Canva", "Graphics"],
+    imageUrl:magazineHeader,
+    link:'/graphics'
+  },
+  
   
   
 ] as const;
