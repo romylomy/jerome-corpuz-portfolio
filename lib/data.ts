@@ -12,6 +12,7 @@ import MobileFuture from "@/public/MobileFuture.svg";
 import MobilePast from "@/public/MobilePast.svg";
 import MobilePresent from "@/public/MobilePresent.svg";
 import magazineHeader from "@/public/magazineHeader.png"
+import AcessControlArticle from "@/public/article/AcessControlArticle.png"
 
 export type LinkType ={
   name: string
@@ -94,7 +95,17 @@ export const projectsData = [
     imageUrl:magazineHeader,
     link:'/graphics'
   },
+] as const;
   
+  export const articleData = [
+    {
+      title: "Access Control Techniques",
+      description:
+        "Users can create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
+      tags: ["RBAC", "DAC", "ACL", "RBAC VS DAC"],
+      imageUrl:AcessControlArticle,
+      link:'/article'
+    },
   
   
 ] as const;
