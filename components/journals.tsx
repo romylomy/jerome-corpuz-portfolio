@@ -9,7 +9,7 @@ export default function Journals() {
   
 
   return (
-    <motion.section id="journals" className="sm:flex sm:justify-center scroll-mt-28 mb-28"
+    <motion.section id="articles" className="sm:flex sm:justify-center scroll-mt-28 mb-28"
     initial={{
       opacity:0,
       }}
@@ -20,7 +20,7 @@ export default function Journals() {
           duration:1
       }}>
       <h1 className=" mb-8 font-semibold text-center text-5xl bg-clip-text text-slate-700 md:text-5xl xl:text-7xl">
-        Projects</h1>
+        Articles</h1>
       <div className="font-[10px] px-8">
         {articleData.map((article, index) => (
           <React.Fragment key={index}>

@@ -16,7 +16,7 @@ export default function AboutCard({
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
       target: ref,
-      offset: ["0 1", "1.33 1"],
+      offset: ["start end", "start start"],
     });
     const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);

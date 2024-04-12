@@ -9,7 +9,7 @@ export default function about() {
   
 
   return (
-    <motion.section id="about" className="lg:flex lg:justify-center scroll-mt-28 mb-28 "
+    <motion.section id="about" className=" sticky lg:flex lg:justify-center scroll-mt-28 mb-28 "
           initial={{
             opacity:0,
             }}

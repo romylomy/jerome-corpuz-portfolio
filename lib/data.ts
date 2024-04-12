@@ -12,6 +12,7 @@ import MobileFuture from "@/public/MobileFuture.svg";
 import MobilePast from "@/public/MobilePast.svg";
 import MobilePresent from "@/public/MobilePresent.svg";
 import magazineHeader from "@/public/magazineHeader.png"
+import dockerChallenge from "@/public/dockerChallenge.png"
 import AcessControlArticle from "@/public/article/AcessControlArticle.png"
 
 export type LinkType ={
@@ -31,6 +32,10 @@ export const links = [
   {
     name: "Projects",
     hash: "/#projects",
+  },
+  {
+    name: "Articles",
+    hash: "/#articles",
   },
   {
     name: "Skills",
@@ -72,6 +77,14 @@ export const dataSkills = {
 
 export const projectsData = [
   {
+    title: "Nginx Images & Docker Compose",
+    description:
+      "Customizing an Nginx image for serving static web pages and configuring a Docker-compose.yml file ",
+    tags: ["Docker Challenge",],
+    imageUrl:dockerChallenge,
+    link:'https://github.com/romylomy/docker-challenge-template'
+  },
+  {
     title: "MealMingle",
     description:
       "Users can create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
@@ -101,7 +114,7 @@ export const projectsData = [
     {
       title: "Access Control Techniques",
       description:
-        "Users can create, organize, and manage their shopping lists while also providing meal ideas based on the ingredients they have.",
+        "Understand the usecase's for Discretionary Access Control and Role-Based Access Control",
       tags: ["RBAC", "DAC", "ACL", "RBAC VS DAC"],
       imageUrl:AcessControlArticle,
       link:'/article'

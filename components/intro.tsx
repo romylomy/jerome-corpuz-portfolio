@@ -36,7 +36,7 @@ export default function Intro() {
               <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    'Software',
+                    'Software Security',
                     1000,
                     'Web',
                     1000,
@@ -53,12 +53,11 @@ export default function Intro() {
                   repeat={Infinity}
                   />
 
-                <span> <br/> Developer  <br /> for cohesive <br /> Design  Dev <br className="lg:hidden"/> synergy </span>
 
 
             </h1> 
             
-            <p className="  py-10 lg:text-lg lg:w-1/2 ">I am Jerome Corpuz a second year software development student at Sait. I enjoy building websites. My focus is the MERN stack.    </p>
+            <p className="  py-10 lg:text-lg lg:w-1/2 ">I am Jerome Corpuz a second year software development student at Sait. I am looking to transition into networking roles with the emphasis in cybersecurity.    </p>
 
       <motion.div
           initial={{ opacity: 0}}
