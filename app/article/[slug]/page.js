@@ -27,7 +27,7 @@ export default async function Page({ params }) {
   }
 
   return (
-    <div>
+    <div className='pt-20'>
       <Head>
         <title>{page.properties.Title?.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
