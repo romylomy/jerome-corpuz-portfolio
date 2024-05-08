@@ -19,6 +19,10 @@ async function getPosts() {
 
 export default async function Home() {
   const posts = await getPosts();
+
+  posts.forEach(post => {
+    console.log(post.properties?.Description?.rich_text[0].text.content);
+  })
   
   return (
     <main className=" p-5 bg-gray-100 bg-opacity-30 backdrop-blur-sm font-Montserrat sm:px-30 md:px-10 lg:px-50 xl:px-60">
@@ -59,6 +63,7 @@ export default async function Home() {
                     </h3>
 
                     <p className={styles.postDescription}>{date}</p>
+                    <p className={styles.postDescription} >{post.properties?.Description?.rich_text[0].text.content}</p>
                     <Link href={`/article/${slug}`}>Read post →</Link>
                   </li>
                 );
