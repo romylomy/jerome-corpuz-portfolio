@@ -27,12 +27,14 @@ export default async function Home() {
         <SectionDivider/>
         <Projects/>
         <SectionDivider/>
-        <div>
+        <div id="articles" className="scroll-mt-28 ">
+        <h1 className=" mb-8 font-semibold text-center text-5xl text-slate-700 md:text-5xl xl:text-7xl">
+        Articles </h1>
           <main className={styles.container}>
             <header className={styles.header}>
-              <h1>Next.js blog powered by Notion API</h1>
+              <h1 className="font-bold">Next.js blog powered by Notion API</h1>
               <p>
-              These are some articles creatted from academic assignement or from books I have been reading 
+              These are some articles created from academic assignements or from books I have been reading 
               </p>
             </header>
 
