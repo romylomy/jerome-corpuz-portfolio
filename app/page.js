@@ -11,9 +11,6 @@ import Link from 'next/link';
 
 
 
-
-export const databaseId = process.env?.NOTION_DATABASE_ID ?? 'NOTION_DATABASE_ID';
-
 async function getPosts() {
   const database = await getDatabase();
 
